@@ -408,7 +408,7 @@
                 <p>感谢阅读我的博客，这一系列播客介绍的是我为了完成PC端控制有人云控制台所写的一个WPF客户端应用程序</p>
 <h2 id="主界面的搭建"><a href="#主界面的搭建" class="headerlink" title="主界面的搭建"></a>主界面的搭建</h2><p>我们主界面采用传统导航栏的方式进行页面导航，通过导航键加载页面到主界面容器控件内从而显示用户页面。</p>
 <h3 id="标题栏设计"><a href="#标题栏设计" class="headerlink" title="标题栏设计"></a>标题栏设计</h3><p>这是我们想要实现的效果，</p>
-<p><img src="https://pic.imgdb.cn/item/60e538665132923bf848c018.png" alt="标题栏"></p>
+<p><img src="https://pic.imgdb.cn/item/60e538665132923bf848c03d.png" alt="效果"></p>
 <p>从图中可以看出这是一个工具条（ToolBar），我们要将这个工具条放入窗体的标题栏中，这就需要Handyorg给我们提供的<code>NonClientAreaContent</code>容器控件，该控件允许我们向窗体的标题栏中添加其他控件。</p>
 <p>我想通过标题栏实现切换系统的色调、主题颜色、语言的功能并且能够通过标题栏实现用户登录的功能，因此我们需要对工具条的设计如下</p>
 <pre class="line-numbers language-xaml" data-language="xaml"><code class="language-xaml">&lt;ToolBar Band="2" Padding="6" Background="Transparent"&gt;
@@ -434,6 +434,7 @@
             &lt;/ToolBar&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>其中涉及到的绑定（Binding）由于解释起来较为繁琐，日后会专门写文章来介绍绑定的用法，当然这会涉及到MVVM架构了，好了这个我们日后再说，先看下效果，</p>
+<p><img src="https://pic.imgdb.cn/item/60e538665132923bf848c018.png" alt="效果"></p>
 <p>这就实现了我们对界面的要求，那么接下来看后台代码如何实现</p>
 <h5 id="系统主题的切换"><a href="#系统主题的切换" class="headerlink" title="系统主题的切换"></a>系统主题的切换</h5><p>我们将主题分为明亮和黑暗两种，其实现方式实际上是应用了我们事先准备好的资源字典，在资源字典中事先定义好画刷以及颜色从而实现一键切换主题，其没有什么技术难点，此处就不深究了，你也可以自己定义其他的主题颜色，只需更改后台的资源字典所定义的画刷等设置即可，在此我贴出我的主题资源字典，供参考</p>
 <pre class="line-numbers language-xaml" data-language="xaml"><code class="language-xaml">&lt;ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
