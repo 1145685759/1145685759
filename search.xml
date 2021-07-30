@@ -40,6 +40,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>有人云PC端——WPF框架初探(一)</title>
+      <link href="/1145685759//5c558a28/"/>
+      <url>/1145685759//5c558a28/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\1145685759\assets\css\APlayer.min.css"><script src="\1145685759\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>感谢阅读我的博客，这一系列播客介绍的是我自主开发的一个上位机WPF客户端应用程序，有上位机开发需要的，可以拿去借鉴下，最后贴了源码！</p><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>[TOC]</p><h2 id="Prism介绍"><a href="#Prism介绍" class="headerlink" title="Prism介绍"></a>Prism介绍</h2><p>Prism是用于在 WPF 和 Xamarin Forms 中构建松散耦合、可维护和可测试的 XAML 应用程序</p><h2 id="Prism历史"><a href="#Prism历史" class="headerlink" title="Prism历史"></a>Prism历史</h2><p>他最初由Microsoft Patterns &amp; Practices 团队构建的项目, 目的是帮助WPF开发人员以简化编写、维护和扩展来设计应用程序。<br>目前它是属于.NET基金会下的一个开源项目。并且经过财富100强等公司的多年的实践考验。</p><h2 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h2><p><a href="https://github.com/PrismLibrary/Prism">https://github.com/PrismLibrary/Prism</a></p><h2 id="NuGet"><a href="#NuGet" class="headerlink" title="NuGet"></a>NuGet</h2><p><a href="https://www.nuget.org/packages/Prism.Wpf">https://www.nuget.org/packages/Prism.Wpf</a></p><p>Core Packages</p><ul><li>Prism.Core</li><li>Prism.Wpf<br>Container Specific Packages</li><li>Prism.DryIoc</li><li>Prism.Unity</li><li>Prism.Ninject</li></ul><h2 id="具备哪些功能"><a href="#具备哪些功能" class="headerlink" title="具备哪些功能?"></a>具备哪些功能?</h2><p>框架中包括 MVVM、依赖注入、Command、Message Event、导航、弹窗等功能。</p><h2 id="Prism的几大模块"><a href="#Prism的几大模块" class="headerlink" title="Prism的几大模块"></a>Prism的几大模块</h2><ol><li>Region(区域管理)</li><li>Module(模块)</li><li>View Injection(视图注入)</li><li>ViewModelLocationProvider(视图模型定位)</li><li>Command(绑定相关)</li><li>Eevent Aggregator (事件聚合器)</li><li>Navigation(导航)</li><li>Dialog(对话框)</li></ol><p>项目介绍</p><p><img src="/1145685759/1145685759/5c558a28/Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210730174137092.png" alt="image-20210730174137092"></p><p><img src="/1145685759/1145685759/5c558a28/Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20210730174156253.png" alt="image-20210730174156253"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> WPF </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
